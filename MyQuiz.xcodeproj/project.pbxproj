@@ -12,6 +12,10 @@
 		4C056ABE21EB567E00AC89B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C056ABC21EB567E00AC89B3 /* Main.storyboard */; };
 		4C056AC021EB567F00AC89B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C056ABF21EB567F00AC89B3 /* Assets.xcassets */; };
 		4C056AC321EB567F00AC89B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C056AC121EB567F00AC89B3 /* LaunchScreen.storyboard */; };
+		4C056AD021EB58DF00AC89B3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C056ACF21EB58DF00AC89B3 /* Question.swift */; };
+		4C056AD221EB58EA00AC89B3 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C056AD121EB58EA00AC89B3 /* QuestionBank.swift */; };
+		4C056AD721EB6E2900AC89B3 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C056AD421EB6E2800AC89B3 /* ProgressHUD.bundle */; };
+		4C056AD821EB6E2900AC89B3 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C056AD521EB6E2800AC89B3 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		4C056ABF21EB567F00AC89B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C056AC221EB567F00AC89B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C056AC421EB567F00AC89B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C056ACF21EB58DF00AC89B3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4C056AD121EB58EA00AC89B3 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		4C056AD321EB6E2700AC89B3 /* MyQuiz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyQuiz-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C056AD421EB6E2800AC89B3 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		4C056AD521EB6E2800AC89B3 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		4C056AD621EB6E2900AC89B3 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,52 @@
 		4C056AB721EB567E00AC89B3 /* MyQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				4C056AB821EB567E00AC89B3 /* AppDelegate.swift */,
-				4C056ABA21EB567E00AC89B3 /* ViewController.swift */,
-				4C056ABC21EB567E00AC89B3 /* Main.storyboard */,
-				4C056ABF21EB567F00AC89B3 /* Assets.xcassets */,
-				4C056AC121EB567F00AC89B3 /* LaunchScreen.storyboard */,
-				4C056AC421EB567F00AC89B3 /* Info.plist */,
+				4C056ACA21EB569100AC89B3 /* Controller */,
+				4C056ACE21EB56BC00AC89B3 /* Model */,
+				4C056ACC21EB56A300AC89B3 /* View */,
+				4C056ACD21EB56AD00AC89B3 /* Supporting Files */,
 			);
 			path = MyQuiz;
+			sourceTree = "<group>";
+		};
+		4C056ACA21EB569100AC89B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C056AB821EB567E00AC89B3 /* AppDelegate.swift */,
+				4C056ABA21EB567E00AC89B3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C056ACC21EB56A300AC89B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C056ABC21EB567E00AC89B3 /* Main.storyboard */,
+				4C056ABF21EB567F00AC89B3 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C056ACD21EB56AD00AC89B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C056AC121EB567F00AC89B3 /* LaunchScreen.storyboard */,
+				4C056AC421EB567F00AC89B3 /* Info.plist */,
+				4C056AD421EB6E2800AC89B3 /* ProgressHUD.bundle */,
+				4C056AD621EB6E2900AC89B3 /* ProgressHUD.h */,
+				4C056AD521EB6E2800AC89B3 /* ProgressHUD.m */,
+				4C056AD321EB6E2700AC89B3 /* MyQuiz-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C056ACE21EB56BC00AC89B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C056ACF21EB58DF00AC89B3 /* Question.swift */,
+				4C056AD121EB58EA00AC89B3 /* QuestionBank.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +144,7 @@
 				TargetAttributes = {
 					4C056AB421EB567E00AC89B3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C056AD721EB6E2900AC89B3 /* ProgressHUD.bundle in Resources */,
 				4C056AC321EB567F00AC89B3 /* LaunchScreen.storyboard in Resources */,
 				4C056AC021EB567F00AC89B3 /* Assets.xcassets in Resources */,
 				4C056ABE21EB567E00AC89B3 /* Main.storyboard in Resources */,
@@ -135,6 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C056AD021EB58DF00AC89B3 /* Question.swift in Sources */,
+				4C056AD221EB58EA00AC89B3 /* QuestionBank.swift in Sources */,
+				4C056AD821EB6E2900AC89B3 /* ProgressHUD.m in Sources */,
 				4C056ABB21EB567E00AC89B3 /* ViewController.swift in Sources */,
 				4C056AB921EB567E00AC89B3 /* AppDelegate.swift in Sources */,
 			);
@@ -282,14 +335,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyQuiz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyQuiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristiantoong.MyQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyQuiz/Supporting Files/MyQuiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +356,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MyQuiz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyQuiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristiantoong.MyQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyQuiz/Supporting Files/MyQuiz-Bridging-Header.h";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
