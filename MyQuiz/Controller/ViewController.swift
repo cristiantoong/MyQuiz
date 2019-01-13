@@ -34,7 +34,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func answerPressed(_ sender: UIButton) {
-        if sender.tag == allQuestions.list[0].tag {
+        if sender.tag == allQuestions.list[questionNumber].tag {
             print("Correct")
             score += 1
             ProgressHUD.showSuccess("Correct!")
@@ -44,8 +44,9 @@ class ViewController: UIViewController {
         }
         
           questionNumber += 1
-        nextQuestion()
+          nextQuestion()
     }
+    
     
     func updateUI(){
         
@@ -60,13 +61,13 @@ class ViewController: UIViewController {
         choiceButtons[2].setTitle(choice3, for: .normal)
         choiceButtons[3].setTitle(choice4, for: .normal)
         
-        progressLabel.text = "\(questionNumber) / 5"
+        progressLabel.text = "\(questionNumber) / 10"
         scoreLabel.text = "Score: \(score)"
         
-        progressBar.frame.size.width = (view.frame.size.width / 5) * CGFloat(questionNumber)
-        
+        progressBar.frame.size.width = (view.frame.size.width / 10) * CGFloat(questionNumber)
        
     }
+    
     
     func nextQuestion() {
         
@@ -76,7 +77,7 @@ class ViewController: UIViewController {
           updateUI()
         } else {
             
-            let alert = UIAlertController(title: "Awesome!", message: "You got \(score) points, Do you want to startover?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Awesome!", message: "You got \(score) points out of 10, Do you want to startover?", preferredStyle: .alert)
             
             let restartAction = UIAlertAction(title: "Restart", style: .default) { (UIAlertAction) in
                 self.startOver()
@@ -84,12 +85,11 @@ class ViewController: UIViewController {
             alert.addAction(restartAction)
             
             present(alert, animated: true, completion: nil)
-//            startOver()
-            
-        
+
         }
         
     }
+    
     
     
     func startOver() {
