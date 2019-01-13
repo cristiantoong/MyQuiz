@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         
-        updateUI()
+         nextQuestion()
         
     }
 
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
     
     
     func updateUI(){
+        
         
         let choice1 = allQuestions.list[questionNumber].answers[0]
         let choice2 = allQuestions.list[questionNumber].answers[1]
@@ -75,6 +76,7 @@ class ViewController: UIViewController {
             
           questionLabel.text = allQuestions.list[questionNumber].question
           updateUI()
+            
         } else {
             
             let alert = UIAlertController(title: "Awesome!", message: "You got \(score) points out of 10, Do you want to startover?", preferredStyle: .alert)
