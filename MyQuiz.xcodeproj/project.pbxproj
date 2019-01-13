@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C056AB921EB567E00AC89B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C056AB821EB567E00AC89B3 /* AppDelegate.swift */; };
-		4C056ABB21EB567E00AC89B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C056ABA21EB567E00AC89B3 /* ViewController.swift */; };
+		4C056ABB21EB567E00AC89B3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C056ABA21EB567E00AC89B3 /* HistoryViewController.swift */; };
 		4C056ABE21EB567E00AC89B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C056ABC21EB567E00AC89B3 /* Main.storyboard */; };
 		4C056AC021EB567F00AC89B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C056ABF21EB567F00AC89B3 /* Assets.xcassets */; };
 		4C056AC321EB567F00AC89B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C056AC121EB567F00AC89B3 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		4C056AB521EB567E00AC89B3 /* MyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C056AB821EB567E00AC89B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C056ABA21EB567E00AC89B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C056ABA21EB567E00AC89B3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		4C056ABD21EB567E00AC89B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C056ABF21EB567F00AC89B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C056AC221EB567F00AC89B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4C056AB821EB567E00AC89B3 /* AppDelegate.swift */,
-				4C056ABA21EB567E00AC89B3 /* ViewController.swift */,
+				4C056ABA21EB567E00AC89B3 /* HistoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 				4C056AD021EB58DF00AC89B3 /* Question.swift in Sources */,
 				4C056AD221EB58EA00AC89B3 /* QuestionBank.swift in Sources */,
 				4C056AD821EB6E2900AC89B3 /* ProgressHUD.m in Sources */,
-				4C056ABB21EB567E00AC89B3 /* ViewController.swift in Sources */,
+				4C056ABB21EB567E00AC89B3 /* HistoryViewController.swift in Sources */,
 				4C056AB921EB567E00AC89B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
